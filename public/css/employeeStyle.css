@@ -1,0 +1,80 @@
+.stylDiv {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+thead th {
+    background-color: #54585d;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #f9f9fa;
+}
+tbody td {
+    color: #636363;
+    border: 1px solid #dddfe1;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.btn{
+    background-color: #333;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    margin: 8px -656px 30px 0px;
+    cursor: pointer;
+    border-radius: 40px;
+    
+}
+.btn2{
+    background-color: #333;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    margin: 8px 4px;
+    cursor: pointer;
+    border-radius: 40px;
+    float: right;
+    
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+@media (min-width: 600px) {
+    .popup {
+        width: 50%;
+    }
+}
